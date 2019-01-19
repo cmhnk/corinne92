@@ -1,4 +1,4 @@
-### README
+# README
 
 My personal website.
 
@@ -15,4 +15,7 @@ $  bundle install
 
 # Start server
 $  rackup
+
+# Deploy to Heroku
+$  git push heroku master
 ```
