@@ -14,5 +14,5 @@ $  git clone https://github.com/cmhnk/corinne92.git
 $  bundle install
 
 # Start server
-$  ruby app.rb
+$  rackup
 ```
