@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'slim'
-require 'rack-ssl'
+require 'rack/ssl'
 
 configure { set :server, :puma }
 
