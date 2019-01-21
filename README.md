@@ -6,7 +6,7 @@ My personal website.
 
 Dependencies - you must have Ruby 2.4.1 installed.
 
-Follow this (gist)[https://gist.github.com/tadast/9932075] to get SSL set up with puma.
+Follow this [gist](https://gist.github.com/tadast/9932075) to get SSL set up with puma.
 
 ```
 # Clone repository
