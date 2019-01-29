@@ -1,0 +1,28 @@
+$ch-purple: #8989BA;
+$ch-gray: #9099A3;
+
+h2 {
+  color: $ch-purple;
+}
+
+h4 {
+  color: $ch-gray;
+  font-weight: lighter;
+}
+
+a:hover {
+  background-color: gold;
+}
+
+.subtitle {
+  color: $ch-gray;
+  font-weight: lighter;
+}
+
+.pt1 {
+  padding-top: 1em;
+}
+
+.circle {
+  border-radius: 50%;
+}
