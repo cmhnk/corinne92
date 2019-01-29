@@ -10,4 +10,16 @@ class App < Sinatra::Base
   get '/' do
     slim :index
   end
+
+  get '/about' do
+    slim :about
+  end
+
+  get '/projects' do
+    slim :projects
+  end
+
+  get '/contacts' do
+    slim :contact
+  end
 end
