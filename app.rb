@@ -19,7 +19,7 @@ class App < Sinatra::Base
     slim :projects
   end
 
-  get '/contacts' do
+  get '/contact' do
     slim :contact
   end
 end

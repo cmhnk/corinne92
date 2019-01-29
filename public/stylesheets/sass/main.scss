@@ -22,6 +22,12 @@ a:hover {
   // text-decoration-color: gold;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+  height: inherit !important;
+}
+
 .subtitle {
   color: $ch-gray;
   font-weight: lighter;
