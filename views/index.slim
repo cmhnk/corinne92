@@ -8,17 +8,12 @@ html language="en"
     title Corinne Henk
 
   body
-    div.container
-      div.row
-        div.col-xs-12.col-md-12
-          h1 class='pt05 tc tw-light' corinne henk
-      div.row
-        a.col-4.text-center.tl href="/about" about
-        a.col-4.text-center.tl href="/projects" projects
-        a.col-4.text-center.tl href="/contact" contact
-      img src="assets/img/home.jpg"
+    == slim :header
+    img src="assets/img/home.jpg"
 
     / div.subtitle software developer &nbsp;
     / a.subtitle href="https://huckberry.com" target="_blank" @Huckberry 
 
     script src="/js/bootstrap.min.js"
+
+
