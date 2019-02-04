@@ -15,8 +15,8 @@ class App < Sinatra::Base
     slim :about
   end
 
-  get '/projects' do
-    slim :projects
+  get '/whats-with-the-dog' do
+    slim :bobblehead
   end
 
   get '/contact' do
