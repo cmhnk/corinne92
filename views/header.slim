@@ -5,10 +5,23 @@ div.container
        h1 id='heading' class='pt05 tc tw-light' corinne henk
   div.row
     a.col-3.text-center.tl.under href="/about" about
-    a.col-3.text-center.tl more coming soon...
     / a.col-3.text-center.tl.under href="/whats-with-the-dog" bobblehead?
-    a.col-3
+    a.col-3.text-center.tl id="more-soon" more coming soon...
     a.col-3
     / a.col-4.text-center.tl.under.under href="/favorites" my favorite things
     / a.col-4.text-center.tl href="/contact" say hello
   div.row
+
+javascript:
+  function removeIfSmallScreen() {
+    const screenWidth = document.documentElement.clientWidth;
+    if (screenWidth < 800) {
+      const element = document.getElementById("more-soon"); 
+      element.parentNode.removeChild(element);
+      return null;
+    }
+  }
+  removeIfSmallScreen();
+
+
+
