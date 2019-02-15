@@ -7,20 +7,66 @@ html language="en"
     link rel="stylesheet" href="./stylesheets/main.css"
     title Corinne Henk | Favorites
 
+  / body
+  /   == slim :header
+  /   div.row-sm
+  /     div.col
+  /       img.favorite src="assets/img/bikeandbuild.png"
+  /     div.col Bike & Build
+  /   div.row-sm
+  /     div.col
+  /       img.favorite src="assets/img/ruby.png"
+  /     div.col Ruby
+  /   div.row-sm
+  /     div.col
+  /       img.favorite src="assets/img/dogpatch.jpeg"
+  /     div.col Dogpatch Boulders
+
+  / / nine block challenge
   body
-    == slim :header
-    div.row-sm
-      div.col
-        img.favorite src="assets/img/bikeandbuild.png"
-      div.col Bike & Build
-    div.row-sm
-      div.col
-        img.favorite src="assets/img/ruby.png"
-      div.col Ruby
-    div.row-sm
-      div.col
-        img.favorite src="assets/img/dogpatch.jpeg"
-      div.col Dogpatch Boulders
+    div.container
+      div.my-row
+        div.square.red
+        div.square.orange
+        div.square.red
+      div.my-row
+        div.square.orange
+        div.square.red
+        div.square.orange
+      div.my-row
+        div.square.red
+        div.square.orange
+        div.square.red
 
+    / / nine block challenge with words
+    / body
+    div.container
+      div.row-text
+        div.square-text Hi
+        div.square-text Hi
+        div.square-text Hi
+      div.row-text
+        div.square-text Hi
+        div.square-text Hi
+        div.square-text Hi
+      div.row-text
+        div.square-text Hi
+        div.square-text Hi
+        div.square-text Hi
 
+    / nine block challenge with images
+    / body
+    div.container
+      div.my-row
+        img.square src="/assets/img/bikeandbuild.png"
+        img.square src="/assets/img/bikeandbuild.png"
+        img.square src="/assets/img/bikeandbuild.png"
+      div.my-row
+        img.square src="/assets/img/bikeandbuild.png"
+        img.square src="/assets/img/bikeandbuild.png"
+        img.square src="/assets/img/bikeandbuild.png"
+      div.my-row
+        img.square src="/assets/img/bikeandbuild.png"
+        img.square src="/assets/img/bikeandbuild.png"
+        img.square src="/assets/img/bikeandbuild.png"
 

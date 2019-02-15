@@ -118,7 +118,7 @@ img {
 }
 
 .favorite {
-  // border-radius: 50%;
+  border-radius: 50%;
   width: 6em;
 }
 
@@ -126,3 +126,126 @@ img {
   border-radius: 50%;
   width: 70%;
 }
+
+.square {
+  height: 10em;
+  width: 10em;
+  display: inline-block;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.my-row {
+  text-align: center;
+  height: 10em;
+  width: 100%;
+}
+
+.container {
+  padding-top: 4em;
+}
+
+.square-text {
+  display: inline-block;
+
+  height: 18vh;
+  width: 18vh;
+  font-size: 18vh;
+  line-height: 18vh;
+}
+
+.row-text {
+  height: 20vh;
+  text-align: center;
+  width: 100%;
+}
+
+.ear {
+  height: 3em;
+  background-color: gray;
+  width: 1em;
+  display: inline-block;
+  border-radius: 50%
+}
+
+.rotated-13 {
+  transform: rotate(-13deg);
+}
+
+.rotated-5 {
+  transform: rotate(7deg);
+}
+
+.left {
+  margin-right: 1em;
+}
+
+.head {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background-color: gray;
+  margin-top: -1em;
+}
+
+.eye-row {
+  text-align: center;
+}
+
+.eye {
+  background-color: white;
+  height: 1em;
+  width: 0.7em;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.pupil {
+  background-color: black;
+  height: .7em;
+  width: .4em;
+  border-radius: 50%;
+  margin-top: .1em;
+  margin-left: .2em;
+}
+
+.nose-row {
+  margin-top: -1em;
+  text-align: center;
+}
+
+.nose {
+  background-color: pink;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 30%;
+  text-align: center;
+  display: inline-block;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.rabbit {
+  width: 4em;
+}
+
+._80-width {
+  width: 80%;
+}
+
+
+
+
+
+
+

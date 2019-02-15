@@ -22,4 +22,8 @@ class App < Sinatra::Base
   get '/contact' do
     slim :contact
   end
+
+  get '/favorites' do
+    slim :favorites
+  end
 end
