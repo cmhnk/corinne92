@@ -26,4 +26,8 @@ class App < Sinatra::Base
   get '/favorites' do
     slim :favorites
   end
+
+  get '/nine-block-challenge-explained' do
+    slim :nine_block_challenge_explained
+  end
 end
