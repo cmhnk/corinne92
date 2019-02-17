@@ -20,11 +20,6 @@ html language="en"
           | &nbsp;is one of the first activities we assign students in Mission Bit's Web Development 101 class. Using CSS and HTML, students are asked to create a 3x3 grid that resembles Example 1.
           br
           br
-          | First, let's create a &lt;div&gt; to contain our nine blocks. Remember, a div element that doesn't contain any text will be invisible on the web page unless we use some CSS to give it height, width, and a background color.
-          br
-          br
-          br
-          | Read the code snippet below and imagine what the code will look like when displayed on the screen. Then, click anywhere in the gray snippet to see the result.
       div.right
         div.spacer
         div.nine-block
@@ -45,6 +40,10 @@ html language="en"
     div.section
       div.left
         div.details
+          | First, let's create a &lt;div&gt; to contain our nine blocks. Remember, a div element that doesn't contain any text will be invisible on the web page unless we use some CSS to give it height, width, and a background color.
+          br
+          br
+          | Read the code snippet below and imagine what the code will look like when displayed on the screen. Then, click anywhere in the gray snippet to see the result.
           a.snippet onclick="showEndResult('example-1')"
             pre.gray-background
               code
@@ -63,17 +62,16 @@ html language="en"
           div.subtext.align-right Click the snippet to see the result
           br
           br
-          | This gray square will be the base of our 3x3 grid. You can think of it like frosting a cake. We have the base layer of our cake, but now we need to add the first layer of frosting. Because of how divs display by default, it would be hard to finish this task with a single layer of frosting composed of 9 squares. Instead, an easier strategy will be to add a base layer of frosting that is made up of three rows.
-          br
-          br
-          | In order to achieve the layering, we will need to nest three "row" divs inside of the container div. Let's also change the background-color of each of these row divs so that we can visually see where each row ends and the next begins.
       div.right
         div.hidden id="example-1"
 
     div.section
       div.left
         div.details
+          | This gray square will be the base of our 3x3 grid. You can think of it like frosting a cake. We have the base layer of our cake, but now we need to add the first layer of frosting. Because of how divs display by default, it would be hard to finish this task with a single layer of frosting composed of 9 squares. Instead, an easier strategy will be to add a base layer of frosting that is made up of three rows.
           br
+          br
+          | In order to achieve the layering, we will need to nest three "row" divs inside of the container div. Let's also change the background-color of each of these row divs so that we can visually see where each row ends and the next begins.
           a.snippet onclick="showEndResult('example-2')"
             pre.gray-background
               code
@@ -127,7 +125,7 @@ html language="en"
           |For simplicity's sake, let's just handle the squares in row 1 for now.
           br
           br
-          a.snippet onclick="showEndResult('example-3')" onmouseover="showTip()"
+          a.snippet onclick="showEndResult('example-3')"
             pre.gray-background
               code
                 | 
@@ -188,9 +186,9 @@ html language="en"
         div.larger-spacer
         div.hidden id="example-3"
           div.row1
-            span.square-1
-            span.square-2
-            span.square-3
+            div.square-1
+            div.square-2
+            div.square-3
           div.row2
           div.row3
     div.section
@@ -210,46 +208,44 @@ html language="en"
           br
           | 2. For an even harder challenge, try making a 3x3 grid out of square words instead of colors.
           br
-
       div.right
         div.spacer
     div.section
-      div.spacer
-      div.spacer
-        div.nine-block.white.inline
-          div.row-text
-            div.square-text Hi
-            div.square-text Hi
-            div.square-text Hi
-          div.row-text
-            div.square-text Hi
-            div.square-text Hi
-            div.square-text Hi
-          div.row-text
-            div.square-text Hi
-            div.square-text Hi
-            div.square-text Hi
-        div.nine-block.inline
-          div.my-row
-            img.square src="/assets/img/bikeandbuild.png"
-            img.square src="/assets/img/bikeandbuild.png"
-            img.square src="/assets/img/bikeandbuild.png"
-          div.my-row
-            img.square src="/assets/img/bikeandbuild.png"
-            img.square src="/assets/img/bikeandbuild.png"
-            img.square src="/assets/img/bikeandbuild.png"
-          div.my-row
-            img.square src="/assets/img/bikeandbuild.png"
-            img.square src="/assets/img/bikeandbuild.png"
-            img.square src="/assets/img/bikeandbuild.png"
+      div.spacer.mobile
+      div.nine-block.white.inline
+        div.row-text
+          div.square-text Hi
+          div.square-text Hi
+          div.square-text Hi
+        div.row-text
+          div.square-text Hi
+          div.square-text Hi
+          div.square-text Hi
+        div.row-text
+          div.square-text Hi
+          div.square-text Hi
+          div.square-text Hi
+      div.nine-block.inline
+        div.spacer.mobile
+        div.my-row
+          img.square src="/assets/img/bikeandbuild.png"
+          img.square src="/assets/img/bikeandbuild.png"
+          img.square src="/assets/img/bikeandbuild.png"
+        div.my-row
+          img.square src="/assets/img/bikeandbuild.png"
+          img.square src="/assets/img/bikeandbuild.png"
+          img.square src="/assets/img/bikeandbuild.png"
+        div.my-row
+          img.square src="/assets/img/bikeandbuild.png"
+          img.square src="/assets/img/bikeandbuild.png"
+          img.square src="/assets/img/bikeandbuild.png"
     div.spacer
     div.spacer
 
 
 javascript:
-
   function showEndResult(id) {
     var element = document.getElementById(id);
     element.classList.add('nine-block');
-    element.classList.remove('hidden')
+    element.classList.remove('hidden');
   }

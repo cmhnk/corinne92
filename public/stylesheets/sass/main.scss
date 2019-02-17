@@ -81,8 +81,44 @@ img {
     margin-right: 1em;
   }
 
-  .desktop {
+  .spacer {
+    background-color: white;
+    height: 4em;
+  }
 
+  .section {
+    text-align: center;
+    width: 85%;
+
+    margin-left: 6em;
+  }
+
+  .details {
+    display: inline-block;
+    text-align: left;
+    width: 90%;
+  }
+
+  .main {
+    width: 90%;
+    height: 40em;
+    text-align: center;
+  }
+
+  .left {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+
+  .right {
+    display: inline-block;
+    width: 40%;
+  }
+
+  .larger-spacer {
+    background-color: white;
+    height: 6em;
   }
 }
 
@@ -129,29 +165,6 @@ img {
 .bobblehead {
   border-radius: 50%;
   width: 70%;
-}
-
-.details {
-  display: inline-block;
-  text-align: left;
-  width: 90%;
-}
-
-.main {
-  width: 90%;
-  height: 40em;
-  text-align: center;
-}
-
-.left {
-  display: inline-block;
-  width: 50%;
-  vertical-align: top;
-}
-
-.right {
-  display: inline-block;
-  width: 40%;
 }
 
 // nine-block challenge
@@ -279,22 +292,25 @@ img {
   width: 300px;
   margin-bottom: 2em;
 }
+
 .row1 {
   height: 33.333%;
   background-color: orange;
 }
+
 .row2 {
   height: 33.333%;
   background-color: blue;
 }
+
 .row3 {
   height: 33.333%;
   background-color: green;
 }
 
 .square-1 {
-  width: 100px;
-  height: 100px;
+  height: 100%;
+  width: 33.333%;
   background-color: red;
   display: inline-block;
 }
@@ -313,29 +329,8 @@ img {
   display: inline-block;
 }
 
-.hidden {
-  visibility: hidden;
-}
-
 .subtext {
   font-size: smaller;
-}
-
-.spacer {
-  background-color: white;
-  height: 4em;
-}
-
-.section {
-  text-align: center;
-  width: 85%;
-
-  margin-left: 6em;
-}
-
-.larger-spacer {
-  background-color: white;
-  height: 6em;
 }
 
 .snippet {
@@ -355,6 +350,20 @@ img {
   text-align: right;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.mobile {
+  background-color: white;
+  height: 2em;
+}
+
+.section {
+  width: 98%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 
 
