@@ -31,9 +31,9 @@ class App < Sinatra::Base
         :subject => params[:subject],
         :body => "this message is from: #{params[:email]}\n" + params[:message]
       @thanks = "Thanks for getting in touch!"
+      slim :contact
     rescue
       @whoops = "So sorry, something went wrong! Please try again later."
-    ensure
       slim :contact
     end
   end
