@@ -10,14 +10,24 @@ html language="en"
   body
     == slim :header
     div.container
-      div.ear.left
-      div.ear
-      div.head
-        div.eye-row
-          div.eye
-            div.pupil
-          div.eye
-            div.pupil
-        div.nose-row
-          div.nose
+      div.right.align-right
+        img.mini src="/assets/img/flower.png"
+      div.left
+        form method="POST" action="/contact" id="my-form"
+          div.form-group
+            label Your name
+            input.form-control name="name"
+          div.form-group
+            label Your email
+            input.form-control type="email" name="email"
+          div.form-group
+            label Subject
+            input.form-control type="text" name="subject"
+          div.form-group
+            label Message
+            textarea.form-control rows="4" name="message"
+
+          button.align-right type="submit" class="btn btn-sm btn-primary" Send
+          div = @thanks
+
 

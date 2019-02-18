@@ -6,3 +6,6 @@ gem 'puma'
 gem 'slim'
 gem 'rack-ssl'
 gem 'sass'
+
+# for email
+gem 'pony'

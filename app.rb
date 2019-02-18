@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'slim'
 require 'rack/ssl'
+require 'pony'
 
 configure { set :server, :puma }
 
@@ -20,6 +21,15 @@ class App < Sinatra::Base
   end
 
   get '/contact' do
+    slim :contact
+  end
+
+  post '/contact' do
+    ::Pony.mail :to => 'corinne.m.henk@gmail.com',
+      :from => 'corinne.m.henk@gmail.com',
+      :subject => params[:subject],
+      :body => "this message is from: #{params[:email]}\n" + params[:message]
+    @thanks = "Thanks for getting in touch!"
     slim :contact
   end
 

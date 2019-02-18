@@ -120,6 +120,10 @@ img {
     background-color: white;
     height: 6em;
   }
+
+  .align-right {
+    text-align: right;
+  }
 }
 
 .lavender-background {
@@ -143,6 +147,9 @@ img {
   border-top: #0000001a;
   border-style: solid;
   border-width: 1px;
+  margin-left: 6em;
+  margin-right: 6em;
+  padding-bottom: 2em;
 }
 
 .space {
@@ -207,7 +214,7 @@ img {
 
 .ear {
   height: 3em;
-  background-color: gray;
+  background-color: #b7b5b5;
   width: 1em;
   display: inline-block;
   border-radius: 50%
@@ -229,7 +236,7 @@ img {
   height: 3em;
   width: 3em;
   border-radius: 50%;
-  background-color: gray;
+  background-color: #b7b5b5;
   margin-top: -1em;
 }
 
@@ -364,6 +371,18 @@ img {
   margin-left: 5px;
   margin-right: 5px;
 }
+
+.options-row {
+  width: 100%;
+  text-align: center;
+}
+
+.mini {
+  max-width: 50%;
+}
+
+
+
 
 
 
