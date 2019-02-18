@@ -25,11 +25,15 @@ class App < Sinatra::Base
   end
 
   post '/contact' do
+  begin
     ::Pony.mail :to => 'corinne.m.henk@gmail.com',
       :from => 'corinne.m.henk@gmail.com',
       :subject => params[:subject],
       :body => "this message is from: #{params[:email]}\n" + params[:message]
     @thanks = "Thanks for getting in touch!"
+  rescue
+    @whoops = "So sorry, something went wrong! Please try again later."
+  ensure
     slim :contact
   end
 
